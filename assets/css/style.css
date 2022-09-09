@@ -1206,13 +1206,14 @@ figure.effect-layla:hover img {
 }
 
 #footer {
-    display: inline;
-    float: left;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     margin-bottom: 20px
 }
 
 .footer_top {
+    display: flex;
     background-color: #252525;
     color: #ddd;
     display: inline;
