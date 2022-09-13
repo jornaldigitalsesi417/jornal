@@ -17,6 +17,7 @@
 <link rel="stylesheet" type="text/css" href="assets/css/theme.css">
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+<link rel="stylesheet" href="padrao_img.css">
 <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 
 <script src="script.js"></script>
@@ -69,9 +70,9 @@
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav main_nav">
           <li class="active"><a href="index.html"><span class="fa fa-home desktop-home"></span><span class="mobile-show">Home</span></a></li>
-          <li><a href="#">Ciência e Saúde</a></li>
-          <li><a href="#">Educação e Esporte</a></li>
-          <li><a href="#">Entretenimento</a></li>
+          <li><a href="#ciencia-saude">Ciência e Saúde</a></li>
+          <li><a href="#educacao-esporte">Educação e Esporte</a></li>
+          <li><a href="#entretenimento">Entretenimento</a></li>
           
           <!-- HEADER DROPDOWN -->
           <!-- <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Mobile</a>
@@ -89,30 +90,7 @@
     </nav>
   </section>
 
-  <section id="newsSection">
-    <div class="row">
-      <div class="col-lg-12 col-md-12">
-        <div class="latest_newsarea"> <span>Últimas notícias</span>
-          <ul id="ticker01" class="news_sticker">
-            <li><a href="#"><img src="images/news_thumbnail3.jpg" alt="">Noticia 1</a></li>
-            <li><a href="#"><img src="images/news_thumbnail3.jpg" alt="">Noticia 2</a></li>
-            <li><a href="#"><img src="images/news_thumbnail3.jpg" alt="">Noticia 3</a></li>
-            <li><a href="#"><img src="images/news_thumbnail3.jpg" alt="">Noticia 4</a></li>
-            <li><a href="#"><img src="images/news_thumbnail3.jpg" alt="">Noticia 5</a></li>
-            <li><a href="#"><img src="images/news_thumbnail3.jpg" alt="">Noticia 6</a></li>
-            <li><a href="#"><img src="images/news_thumbnail3.jpg" alt="">Noticia 7</a></li>
-            <li><a href="#"><img src="images/news_thumbnail3.jpg" alt="">Noticia 8</a></li>
-            <li><a href="#"><img src="images/news_thumbnail2.jpg" alt="">Noticia 9</a></li>
-          </ul>
-          <div class="social_area">
-            <ul class="social_nav">
-              <li class="youtube"><a href="https://www.youtube.com/" target="_blank"></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  
 
 
   <!-- <section id="sliderSection">
@@ -239,6 +217,7 @@
           </div>
 
 
+     
           <!-- CATEGORIA DUPLA -->
           <!-- <div class="fashion_technology_area">
             <div class="fashion">
@@ -310,16 +289,23 @@
             </div>
           </div> -->
 
+          <style>
+            .img_padrao{
+                height: 250px;
+          }
+          </style>
+
+
           <div style="width: 100%; display: inline; float: left;">
             <div style="width: 100%; display: flex; justify-content: center;">
-              <div class="single_post_content">
+              <div id="ciencia-saude" class="single_post_content">
                 <h2><span>CIÊNCIA E SAÚDE</span></h2>
 
                 <div class="div_grid">
 
                   <ul class="business_catgnav wow fadeInDown">
                     <li>
-                      <figure class="bsbig_fig"> <a href="pages/single_page.html" class="featured_img"> <img alt="" src="images/featured_img2.jpg"> <span class="overlay"></span> </a>
+                      <figure class="bsbig_fig"> <a href="ciencia_e_saude/index.html" class="featured_img"> <img alt="" src="images/featured_img2.jpg" class=""> <span class="overlay"></span> </a>
                         <figcaption> <a href="pages/single_page.html">Proin rhoncus consequat nisl eu ornare mauris</a> </figcaption>
                         <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a phare...</p>
                       </figure>
@@ -353,34 +339,45 @@
 
           <div style="width: 100%; display: inline; float: left;">
             <div style="width: 100%; display: flex; justify-content: center;">
-              <div class="single_post_content">
+              <div id="educacao-esporte" class="single_post_content">
                 <h2><span>EDUCAÇÃO E ESPORTE</span></h2>
 
                 <div class="div_grid">
 
                   <ul class="business_catgnav wow fadeInDown">
                     <li>
-                      <figure class="bsbig_fig"> <a href="./educacao_e_esporte/insustentabilidade_fashion/index.html" class="featured_img"> <img alt="" src="./educacao_e_esporte/insustentabilidade_fashion/image1.jpg"> <span class="overlay"></span> </a>
+                      <figure class="bsbig_fig"> <a href="./educacao_e_esporte/insustentabilidade_fashion/index.html" class="featured_img"> <img alt="" src="./educacao_e_esporte/insustentabilidade_fashion/image1.jpg" class="img_padrao"> <span class="overlay"></span> </a>
                         <figcaption> <a href="./educacao_e_esporte/insustentabilidade_fashion/index.html">Insustentabilidade Alimentar</a> </figcaption>
-                        <p>A moda pode ser definida como avfrequência da aparição de um modelo específico de comportamento. Dentro de uma análise social, frequentemente ...</p>
+                        <p>A moda pode ser definida como a frequência da aparição de um modelo específico de comportamento. Dentro de uma análise social, frequentemente ...</p>
                       </figure>
                     </li>
                   </ul>
   
                   <ul class="business_catgnav wow fadeInDown">
                     <li>
-                      <figure class="bsbig_fig"> <a href="pages/single_page.html" class="featured_img"> <img alt="" src="images/featured_img2.jpg"> <span class="overlay"></span> </a>
-                        <figcaption> <a href="pages/single_page.html">Proin rhoncus consequat nisl eu ornare mauris</a> </figcaption>
-                        <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a phare...</p>
+                      <figure class="bsbig_fig"> <a href="./educacao_e_esporte/arte_e_conceito/index.html" class="featured_img"> <img alt="" src="./educacao_e_esporte/arte_e_conceito/image1.jpg"  class="img_padrao"> <span class="overlay"></span> </a>
+                        <figcaption> <a href="./educacao_e_esporte/arte_e_conceito/index.html">Arte e Conceito</a> </figcaption>
+                        <p>A arte é gosto, e gosto não se discute, se tem. Porém, é cabível reflexões sobre o que estamos vendo a nossa frente, tanto se é agradável ...</p>
                       </figure>
                     </li>
                   </ul>
   
                   <ul class="business_catgnav wow fadeInDown">
                     <li>
-                      <figure class="bsbig_fig"> <a href="pages/single_page.html" class="featured_img"> <img alt="" src="images/featured_img2.jpg"> <span class="overlay"></span> </a>
-                        <figcaption> <a href="pages/single_page.html">Proin rhoncus consequat nisl eu ornare mauris</a> </figcaption>
-                        <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a phare...</p>
+                      <figure class="bsbig_fig"> <a href="./educacao_e_esporte/ingresso-universitario-nao-tradicional/index.html" class="featured_img"> <img alt="" src="./educacao_e_esporte/ingresso-universitario-nao-tradicional/img/medalhas-oba.png"  class="img_padrao"> <span class="overlay"></span> </a>
+                        <figcaption> <a href="./educacao_e_esporte/ingresso-universitario-nao-tradicional/index.html">O Ingresso Universitário não Tradicional</a> </figcaption>
+                        <p>O ensino superior foi instituído no Brasil em 1909, com a criação da Escola Universitária Livre de Manáos – hoje, Universidade Federal do Amazonas. Ao longo do tempo, foi estabelecido o vestibular como forma ...
+                        </p>
+                      </figure>
+                    </li>
+                  </ul>
+
+                  <ul class="business_catgnav wow fadeInDown">
+                    <li>
+                      <figure class="bsbig_fig"> <a href="./educacao_e_esporte/preconceito_linguistico/index.html" class="featured_img"> <img alt="" src="./educacao_e_esporte/preconceito_linguistico/image1.jpg"  class="img_padrao"> <span class="overlay"></span> </a>
+                        <figcaption> <a href="./educacao_e_esporte/preconceito_linguistico/index.html">Preconceito Linguístico</a> </figcaption>
+                        <p>O Preconceito Linguístico é aquele gerado pelas diferenças linguísticas existentes dentre de um mesmo idioma, é um dos tipos de preconceito mais ...
+                        </p>
                       </figure>
                     </li>
                   </ul>
@@ -394,32 +391,32 @@
 
           <div style="width: 100%; display: inline; float: left;">
             <div style="width: 100%; display: flex; justify-content: center;">
-              <div class="single_post_content">
+              <div id="entretenimento" class="single_post_content">
                 <h2><span>ENTRETENIMENTO</span></h2>
 
                 <div class="div_grid">
 
                   <ul class="business_catgnav wow fadeInDown">
                     <li>
-                      <figure class="bsbig_fig"> <a href="pages/single_page.html" class="featured_img"> <img alt="" src="images/featured_img2.jpg"> <span class="overlay"></span> </a>
-                        <figcaption> <a href="pages/single_page.html">Proin rhoncus consequat nisl eu ornare mauris</a> </figcaption>
-                        <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a phare...</p>
+                      <figure class="bsbig_fig"> <a href="./entretenimento/festival-geekie.html" class="featured_img"> <img alt="" src="./entretenimento/img/manga.png"  class="img_padrao"> <span class="overlay"></span> </a>
+                        <figcaption> <a href="./entretenimento/festival-geekie.html">Festival Geek & Matsuri</a> </figcaption>
+                        <p>O número de pessoas que se identificam com a cultura geek vem crescendo no Brasil. Também conhecida como cultura nerd ...</p>
                       </figure>
                     </li>
                   </ul>
   
                   <ul class="business_catgnav wow fadeInDown">
                     <li>
-                      <figure class="bsbig_fig"> <a href="pages/single_page.html" class="featured_img"> <img alt="" src="images/featured_img2.jpg"> <span class="overlay"></span> </a>
-                        <figcaption> <a href="pages/single_page.html">Proin rhoncus consequat nisl eu ornare mauris</a> </figcaption>
-                        <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a phare...</p>
+                      <figure class="bsbig_fig"> <a href="./entretenimento/roteiro_de_viagem_para_Catar/index.html" class="featured_img"> <img alt="" src="./entretenimento/roteiro_de_viagem_para_Catar/image1.jpg"  class="img_padrao"> <span class="overlay"></span> </a>
+                        <figcaption> <a href="./entretenimento/roteiro_de_viagem_para_Catar/index.html">Roteiro de Viagem para Catar</a> </figcaption>
+                        <p>Catar, ou Qatar, é um país localizado na Ásia Ocidental, na Península Arábica (península é uma extensão de terra cercada por água em quase todos os lados), e estende-se até o norte do Golfo Pérsico ...</p>
                       </figure>
                     </li>
                   </ul>
   
                   <ul class="business_catgnav wow fadeInDown">
                     <li>
-                      <figure class="bsbig_fig"> <a href="pages/single_page.html" class="featured_img"> <img alt="" src="images/featured_img2.jpg"> <span class="overlay"></span> </a>
+                      <figure class="bsbig_fig"> <a href="pages/single_page.html" class="featured_img"> <img alt="" src="images/featured_img2.jpg"  class="img_padrao"> <span class="overlay"></span> </a>
                         <figcaption> <a href="pages/single_page.html">Proin rhoncus consequat nisl eu ornare mauris</a> </figcaption>
                         <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a phare...</p>
                       </figure>
