@@ -1617,7 +1617,8 @@ blockquote {
     padding: 10px 20px;
     margin: 0 0 20px;
     font-size: 17.5px;
-    border-left: 5px solid #eee
+    border-left: 6px solid rgb(232, 232, 232);
+    background-color: rgb(240, 240, 240);
 }
 
 blockquote p:last-child,
@@ -1775,7 +1776,8 @@ pre code {
 }
 
 .row_footer{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin-right: -15px;
     margin-left: -15px;
     gap: 30px;

@@ -64,7 +64,8 @@ img:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    text-align: center
+    max-height: 350px;
+    max-width: 100%;
 }
 
 .img-right {
@@ -187,6 +188,24 @@ img:hover {
 .btn-theme:hover {
     background-color: #ce39cc;
     color: #fff
+}
+
+.a-share{
+    margin-left: auto; 
+    margin-right: 0;
+    color: #fff;
+    background-color: #e40520;
+    padding: 2px 8px;
+    text-align: center;
+    border-radius: 4px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    border: 1px solid #303030;
+    transition: .5s;
+}
+.a-share:hover{
+    border: 1px solid #fff;
+    color: #fff;
 }
 
 .transition {
@@ -800,7 +819,9 @@ img:hover {
     width: 100%
 }
 
-.business_catgnav {}
+.business_catgnav {
+    padding: 12px;
+}
 
 .business_catgnav li {
     float: left;
@@ -866,11 +887,14 @@ img:hover {
 }
 
 .featured_img {
-    position: relative
+    min-height: 100%;
+    min-width: 100%;
+    max-height: 100%;
+    max-width: 100%;
 }
 
 .overlay:hover {
-    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.4)
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.2)
 }
 
 .overlay {
@@ -1231,7 +1255,6 @@ figure.effect-layla:hover img {
     display: inline;
     float: left;
     width: 100%;
-    min-height: 310px
 }
 
 .footer_widget>h2 {
@@ -1379,16 +1402,19 @@ figure.effect-layla:hover img {
 .post_commentbox a,
 .post_commentbox span {
     color: #798992;
-    font-size: 11px;
-    margin-right: 5px
+    font-size: 13px;
+    margin-right: 12px
 }
 
 .post_commentbox a>i,
 .post_commentbox span>i {
-    margin-right: 5px
+    margin-right: 4px
 }
 
 .breadcrumb {
+    display: flex;
+    align-items: center;
+    min-width: 100%;
     background-color: #303030;
     border-radius: 0
 }
@@ -1407,9 +1433,6 @@ figure.effect-layla:hover img {
 }
 
 .single_page_content>img {
-    max-width: 100%;
-    width: 320px;
-    height: 213px;
     margin-bottom: 15px
 }
 
@@ -1731,7 +1754,14 @@ figure.effect-layla:hover img {
     gap: 20px;
 }
 
-@media(max-width:1199px) {
+@media(max-width:750px) {
+    .row_footer{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:1199px) {
     .logo_area {
         width: 34%
     }

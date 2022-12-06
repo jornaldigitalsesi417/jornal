@@ -307,6 +307,106 @@
   <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
   <script>
     new window.VLibras.Widget('https://vlibras.gov.br/app');
+  
+  const applyDate = () => {
+    var dateSplit = Date().split(" ")
+
+    var date;
+    switch (dateSplit[0]) {
+      case 'Mon':
+          date = 'Segunda-feira'
+        break;
+
+      case 'Tue':
+          date = 'Terça-feira'
+        break;
+
+      case 'Wed':
+          date = 'Quarta-feira'
+        break;
+
+      case 'Thu':
+          date = 'Quinta-feira'
+        break;
+
+      case 'Fri':
+          date = 'Sexta-feira'
+        break;
+
+      case 'Sat':
+          date = 'Sábado'
+        break;
+
+      case 'Sun':
+          date = 'Domingo'
+        break;
+    
+      default:
+        break;
+    }
+    
+    var month;
+    switch (dateSplit[1]) {
+      case 'Jan':
+          month = 'Janeiro'
+        break;
+
+      case 'Feb':
+          month = 'Fevereiro'
+        break;
+
+      case 'Mar':
+          month = 'Março'
+        break;
+
+      case 'Apr':
+          month = 'April'
+        break;
+
+      case 'May':
+          month = 'Maio'
+        break;
+
+      case 'Jun':
+          month = 'Junho'
+        break;
+
+      case 'Jul':
+          month = 'Julho'
+        break;
+
+      case 'Aug':
+          month = 'Agosto'
+        break;
+
+      case 'Sep':
+          month = 'Setembro'
+        break;
+
+      case 'Oct':
+          month = 'Outubro'
+        break;
+
+      case 'Nov':
+          month = 'Novembro'
+        break;
+
+      case 'Dec':
+          month = 'Dezembro'
+        break;
+    
+      default:
+        break;
+    }
+    
+    var day = dateSplit[2];
+    var year = dateSplit[3];
+    var text = date + ", " + day + " de " + month + " de " + year;
+    
+    document.getElementById("p-date").innerHTML = text
+  }
+
+  window.onload(applyDate())
   </script>
 
 </body>

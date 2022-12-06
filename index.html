@@ -20,7 +20,7 @@
 <link rel="stylesheet" href="padrao_img.css">
 <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 
-<script src="script.js"></script>
+<script src="script.js" defer></script>
 
 <!--[if lt IE 9]>
 <script src="assets/js/html5shiv.min.js"></script>
@@ -55,42 +55,45 @@
       </div>
       <div class="col-lg-12 col-md-12 col-sm-12">
         <div class="header_bottom">
-          <div class="logo_area"><a href="index.html" class="logo"><img src="images/logo-sesi.jpg" alt=""></a></div>
           <div class="add_banner"><p>Coluna SESI</p></div>
+          <div class="logo_area"><a href="index.html" class="logo"><img src="images/logo-sesi.jpg" alt=""></a></div>
         </div>
       </div>
     </div>
+
+
+    <section id="navArea" style="padding: 10px 0;">
+      <nav class="navbar navbar-inverse" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav main_nav">
+            <li class="active"><a href="index.html"><span class="fa fa-home desktop-home"></span><span class="mobile-show">Home</span></a></li>
+            <li><a href="#ciencia-saude">Ciência e Saúde</a></li>
+            <li><a href="#educacao-esporte">Educação e Esporte</a></li>
+            <li><a href="#economia_e_politica">Economia e Política</a></li>
+            <li><a href="#entretenimento-cultura">Entretenimento e Cultura</a></li>
+            
+            <!-- HEADER DROPDOWN -->
+            <!-- <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Mobile</a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Android</a></li>
+                <li><a href="#">Samsung</a></li>
+                <li><a href="#">Nokia</a></li>
+                <li><a href="#">Walton Mobile</a></li>
+                <li><a href="#">Sympony</a></li>
+              </ul>
+            </li> -->
+            <!-- <li><a href="pages/404.html">404 Page</a></li> -->
+          </ul>
+        </div>
+      </nav>
+    </section>
+    
+
   </header>
 
-  <section id="navArea">
-    <nav class="navbar navbar-inverse" role="navigation">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav main_nav">
-          <li class="active"><a href="index.html"><span class="fa fa-home desktop-home"></span><span class="mobile-show">Home</span></a></li>
-          <li><a href="#ciencia-saude">Ciência e Saúde</a></li>
-          <li><a href="#educacao">Educação</a></li>
-          <li><a href="#economia_e_politica">Economia e Política</a></li>
-          <li><a href="#entretenimento">Entretenimento</a></li>
-          <li><a href="#esporte">Esporte</a></li>
-          
-          <!-- HEADER DROPDOWN -->
-          <!-- <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Mobile</a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="#">Android</a></li>
-              <li><a href="#">Samsung</a></li>
-              <li><a href="#">Nokia</a></li>
-              <li><a href="#">Walton Mobile</a></li>
-              <li><a href="#">Sympony</a></li>
-            </ul>
-          </li> -->
-          <!-- <li><a href="pages/404.html">404 Page</a></li> -->
-        </ul>
-      </div>
-    </nav>
-  </section>
 
   
 
@@ -216,9 +219,8 @@
                 </li>
               </ul>
             </div> -->
+          
           </div>
-
-
      
           <!-- CATEGORIA DUPLA -->
           <!-- <div class="fashion_technology_area">
@@ -293,7 +295,10 @@
 
           <style>
             .img_padrao{
-                height: 250px;
+                width: 100%;
+                max-height: 225px;
+                overflow: hidden;
+                min-height: 225px;
           }
           </style>
 
@@ -307,27 +312,27 @@
 
                   <ul class="business_catgnav wow fadeInDown">
                     <li>
-                      <figure class="bsbig_fig"> <a href="ciencia_e_saude/index.html" class="featured_img"> <img alt="" src="images/featured_img2.jpg" class=""> <span class="overlay"></span> </a>
-                        <figcaption> <a href="pages/single_page.html">Proin rhoncus consequat nisl eu ornare mauris</a> </figcaption>
-                        <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a phare...</p>
+                      <figure class="bsbig_fig"> <a href="./ciencia_e_saude/o_impacto_dos_testes_em_animais_feitos_pelas_industrias_de_cosméticos/index.html" class="featured_img"> <img alt="" src="./ciencia_e_saude/o_impacto_dos_testes_em_animais_feitos_pelas_industrias_de_cosméticos/image1.jpg" class="img_padrao"> <span class="overlay"></span> </a>
+                        <figcaption> <a href="./ciencia_e_saude/o_impacto_dos_testes_em_animais_feitos_pelas_industrias_de_cosméticos/index.html">O impacto dos testes em animais feitos pelas indústrias de cosméticos</a> </figcaption>
+                        <p>É fato que no contexto atual muito se discute sobre a testagem de produtos em animais, essa temática propagou-se ao mundo inteiro através ...</p>
                       </figure>
                     </li>
                   </ul>
   
                   <ul class="business_catgnav wow fadeInDown">
                     <li>
-                      <figure class="bsbig_fig"> <a href="pages/single_page.html" class="featured_img"> <img alt="" src="images/featured_img2.jpg"> <span class="overlay"></span> </a>
-                        <figcaption> <a href="pages/single_page.html">Proin rhoncus consequat nisl eu ornare mauris</a> </figcaption>
-                        <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a phare...</p>
+                      <figure class="bsbig_fig"> <a href="./ciencia_e_saude/casos_de_poliomielite_voltam_a_assolar_o_mundo/index.html" class="featured_img"> <img alt="" src="./ciencia_e_saude/casos_de_poliomielite_voltam_a_assolar_o_mundo/image1.jpg"  class="img_padrao"> <span class="overlay"></span> </a>
+                        <figcaption> <a href="./ciencia_e_saude/casos_de_poliomielite_voltam_a_assolar_o_mundo/index.html">Casos de poliomielite voltam a assolar o mundo</a> </figcaption>
+                        <p>A poliomielite é uma doença conhecida desde a antiguidade, porém foi somente no final do século XIX que a doença paralítica foi reconhecida ...</p>
                       </figure>
                     </li>
                   </ul>
-  
+
                   <ul class="business_catgnav wow fadeInDown">
                     <li>
-                      <figure class="bsbig_fig"> <a href="pages/single_page.html" class="featured_img"> <img alt="" src="images/featured_img2.jpg"> <span class="overlay"></span> </a>
-                        <figcaption> <a href="pages/single_page.html">Proin rhoncus consequat nisl eu ornare mauris</a> </figcaption>
-                        <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a phare...</p>
+                      <figure class="bsbig_fig"> <a href="./ciencia_e_saude/telescopio_espacial_james_webb/index.html" class="featured_img"> <img alt="" src="./ciencia_e_saude/telescopio_espacial_james_webb/image1.png"  class="img_padrao"> <span class="overlay"></span> </a>
+                        <figcaption> <a href="./ciencia_e_saude/telescopio_espacial_james_webb/index.html">Telescópio espacial James Webb</a> </figcaption>
+                        <p>Webb, um observatório infravermelho revolucionário em órbita, complementará e ampliará as descobertas do Telescópio Espacial Hubble, ...</p>
                       </figure>
                     </li>
                   </ul>
@@ -341,8 +346,8 @@
 
           <div style="width: 100%; display: inline; float: left;">
             <div style="width: 100%; display: flex; justify-content: center;">
-              <div id="educacao" class="single_post_content">
-                <h2><span>EDUCAÇÃO</span></h2>
+              <div id="educacao-esporte" class="single_post_content">
+                <h2><span>EDUCAÇÃO E ESPORTE</span></h2>
 
                 <div class="div_grid">
 
@@ -376,10 +381,18 @@
 
                   <ul class="business_catgnav wow fadeInDown">
                     <li>
-                      <figure class="bsbig_fig"> <a href="./educacao_e_esporte/preconceito_linguistico/index.html" class="featured_img"> <img alt="" src="./educacao_e_esporte/preconceito_linguistico/image1.jpg"  class="img_padrao"> <span class="overlay"></span> </a>
-                        <figcaption> <a href="./educacao_e_esporte/preconceito_linguistico/index.html">Preconceito Linguístico</a> </figcaption>
-                        <p>O Preconceito Linguístico é aquele gerado pelas diferenças linguísticas existentes dentre de um mesmo idioma, é um dos tipos de preconceito mais ...
-                        </p>
+                      <figure class="bsbig_fig"> <a href="./educacao_e_esporte/inclusao_social_nos_esportes/index.html" class="featured_img"> <img alt="" src="./educacao_e_esporte/inclusao_social_nos_esportes/image2.png"  class="img_padrao"> <span class="overlay"></span> </a>
+                        <figcaption> <a href="./educacao_e_esporte/inclusao_social_nos_esportes/index.html">Inclusão Social nos Esportes</a> </figcaption>
+                        <p>Formado por diversas raças e culturas, o Brasil é formado por várias misturas. Porém, tais diferenças ainda são vistas de maneira equivocada, consequentemente ...</p>
+                      </figure>
+                    </li>
+                  </ul>
+
+                  <ul class="business_catgnav wow fadeInDown">
+                    <li>
+                      <figure class="bsbig_fig"> <a href="./educacao_e_esporte/a_importancia_das_olimpiadas_do_conhecimento_num_pais_desinteressado_pela_ciencia/index.html" class="featured_img"> <img alt="" src="./educacao_e_esporte/a_importancia_das_olimpiadas_do_conhecimento_num_pais_desinteressado_pela_ciencia/image2.jpeg"  class="img_padrao"> <span class="overlay"></span> </a>
+                        <figcaption> <a href="./educacao_e_esporte/a_importancia_das_olimpiadas_do_conhecimento_num_pais_desinteressado_pela_ciencia/index.html">A importância das olimpíadas do conhecimento num país desinteressado pela ciência</a> </figcaption>
+                        <p>Num cenário pandêmico, em que a ciência é a protagonista no combate à crise sanitária, o investimento brasileiro em pesquisas ...</p>
                       </figure>
                     </li>
                   </ul>
@@ -393,7 +406,7 @@
 
           <div style="width: 100%; display: inline; float: left;">
             <div style="width: 100%; display: flex; justify-content: center;">
-              <div id="economia_e_politica" class="single_post_content">
+              <div id="economia-politica" class="single_post_content">
                 <h2><span>ECONOMIA E POLÍTICA</span></h2>
 
                 <div class="div_grid">
@@ -409,18 +422,18 @@
   
                   <ul class="business_catgnav wow fadeInDown">
                     <li>
-                      <figure class="bsbig_fig"> <a href="pages/single_page.html" class="featured_img"> <img alt="" src="images/featured_img2.jpg"> <span class="overlay"></span> </a>
-                        <figcaption> <a href="pages/single_page.html">Proin rhoncus consequat nisl eu ornare mauris</a> </figcaption>
-                        <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a phare...</p>
+                      <figure class="bsbig_fig"> <a href="economia_e_politica/cargos_definidos_ nas_eleicoes_2022/index.html" class="featured_img"> <img alt="" src="economia_e_politica/cargos_definidos_ nas_eleicoes_2022/image1.jpg"> <span class="overlay"></span> </a>
+                        <figcaption> <a href="economia_e_politica/cargos_definidos_ nas_eleicoes_2022/index.html">Quais serão os cargos definidos nas eleições de 2022?</a> </figcaption>
+                        <p>No dia 02/10 haverá mais uma eleição, onde todos os brasileiros acima de 16 anos poderão exercer o poder de escolha dos políticos que irão representa-los, ...</p>
                       </figure>
                     </li>
                   </ul>
   
                   <ul class="business_catgnav wow fadeInDown">
                     <li>
-                      <figure class="bsbig_fig"> <a href="pages/single_page.html" class="featured_img"> <img alt="" src="images/featured_img2.jpg"> <span class="overlay"></span> </a>
-                        <figcaption> <a href="pages/single_page.html">Proin rhoncus consequat nisl eu ornare mauris</a> </figcaption>
-                        <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a phare...</p>
+                      <figure class="bsbig_fig"> <a href="economia_e_politica/a_falha/index.html" class="featured_img"> <img alt="" src="economia_e_politica/a_falha/image2.jpg"> <span class="overlay"></span> </a>
+                        <figcaption> <a href="economia_e_politica/a_falha/index.html">A Falha</a> </figcaption>
+                        <p>O sistema capitalista se consolidou principalmente em decorrência da crise do feudalismo e pela expansão marítima europeia. Ele se divide em três períodos: ...</p>
                       </figure>
                     </li>
                   </ul>
@@ -434,15 +447,24 @@
 
           <div style="width: 100%; display: inline; float: left;">
             <div style="width: 100%; display: flex; justify-content: center;">
-              <div id="entretenimento" class="single_post_content">
-                <h2><span>ENTRETENIMENTO</span></h2>
+              <div id="entretenimento-cultura" class="single_post_content">
+                <h2><span>CULTURA e ENTRETENIMENTO</span></h2>
 
                 <div class="div_grid">
 
                   <ul class="business_catgnav wow fadeInDown">
                     <li>
-                      <figure class="bsbig_fig"> <a href="./entretenimento/festival-geekie.html" class="featured_img"> <img alt="" src="./entretenimento/img/manga.png"  class="img_padrao"> <span class="overlay"></span> </a>
-                        <figcaption> <a href="./entretenimento/festival-geekie.html">Festival Geek & Matsuri</a> </figcaption>
+                      <figure class="bsbig_fig"> <a href="./entretenimento_e_cultura/preconceito_linguistico/index.html" class="featured_img"> <img alt="" src="./entretenimento_e_cultura/preconceito_linguistico/image1.jpg"  class="img_padrao"> <span class="overlay"></span> </a>
+                        <figcaption> <a href="./entretenimento_e_cultura/preconceito_linguistico/index.html">Preconceito Linguístico</a> </figcaption>
+                        <p>O Preconceito Linguístico é aquele gerado pelas diferenças linguísticas existentes dentre de um mesmo idioma, é um dos tipos de preconceito mais ...</p>
+                      </figure>
+                    </li>
+                  </ul>
+
+                  <ul class="business_catgnav wow fadeInDown">
+                    <li>
+                      <figure class="bsbig_fig"> <a href="./entretenimento_e_cultura/festival_geek_&_matsuri/index.html" class="featured_img"> <img alt="" src="entretenimento_e_cultura/festival_geek_&_matsuri/image4.png"  class="img_padrao"> <span class="overlay"></span> </a>
+                        <figcaption> <a href="./entretenimento_e_cultura/festival_geek_&_matsuri/index.html">Festival Geek & Matsuri</a> </figcaption>
                         <p>O número de pessoas que se identificam com a cultura geek vem crescendo no Brasil. Também conhecida como cultura nerd ...</p>
                       </figure>
                     </li>
@@ -450,8 +472,8 @@
   
                   <ul class="business_catgnav wow fadeInDown">
                     <li>
-                      <figure class="bsbig_fig"> <a href="./entretenimento/roteiro_de_viagem_para_Catar/index.html" class="featured_img"> <img alt="" src="./entretenimento/roteiro_de_viagem_para_Catar/image1.jpg"  class="img_padrao"> <span class="overlay"></span> </a>
-                        <figcaption> <a href="./entretenimento/roteiro_de_viagem_para_Catar/index.html">Roteiro de Viagem para Catar</a> </figcaption>
+                      <figure class="bsbig_fig"> <a href="./entretenimento_e_cultura/roteiro_de_viagem_para_Catar/index.html" class="featured_img"> <img alt="" src="./entretenimento_e_cultura/roteiro_de_viagem_para_Catar/image1.jpg"  class="img_padrao"> <span class="overlay"></span> </a>
+                        <figcaption> <a href="./entretenimento_e_cultura/roteiro_de_viagem_para_Catar/index.html">Roteiro de Viagem para Catar</a> </figcaption>
                         <p>Catar, ou Qatar, é um país localizado na Ásia Ocidental, na Península Arábica (península é uma extensão de terra cercada por água em quase todos os lados), e estende-se até o norte do Golfo Pérsico ...</p>
                       </figure>
                     </li>
@@ -459,15 +481,45 @@
   
                   <ul class="business_catgnav wow fadeInDown">
                     <li>
-                      <figure class="bsbig_fig"> <a href="entretenimento/o_fenomeno_euphoria/" class="featured_img"> <img alt="" src="entretenimento/o_fenomeno_euphoria/image1.jpg"  class="img_padrao"> <span class="overlay"></span> </a>
-                        <figcaption> <a href="pages/single_page.html">O fenômeno Euphoria</a> </figcaption>
-                        <p>O fenômeno mundial “Euphoria”,
-                          série aclamada pela crítica e
-                          produzida pela HBO, sempre foi alvo
-                          de muitas polêmicas. A história é
-                          guiada pelos olhos de Rue
-                          (interpretada pela vencedora do
-                          Emmy ...</p>
+                      <figure class="bsbig_fig"> <a href="./entretenimento_e_cultura/o_fenomeno_euphoria/" class="featured_img"> <img alt="" src="./entretenimento_e_cultura/o_fenomeno_euphoria/image1.jpg"  class="img_padrao"> <span class="overlay"></span> </a>
+                        <figcaption> <a href="./entretenimento_e_cultura/o_fenomeno_euphoria/">O fenômeno Euphoria</a> </figcaption>
+                        <p>O fenômeno mundial “Euphoria”, série aclamada pela crítica e produzida pela HBO, sempre foi alvo de muitas polêmicas. A história é guiada pelos olhos de Rue (interpretada pela vencedora do Emmy ...</p>
+                      </figure>
+                    </li>
+                  </ul>
+
+                  <ul class="business_catgnav wow fadeInDown">
+                    <li>
+                      <figure class="bsbig_fig"> <a href="./entretenimento_e_cultura/bingo_o_rei_das_manhas/index.html" class="featured_img"> <img alt="" src="./entretenimento_e_cultura/bingo_o_rei_das_manhas/image1.png"  class="img_padrao"> <span class="overlay"></span> </a>
+                        <figcaption> <a href="./entretenimento_e_cultura/bingo_o_rei_das_manhas/index.html">Roteiro de Viagem para Catar</a> </figcaption>
+                        <p>Na década de 1980, o desafio era ainda maior. Não era suficiente ser apenas um palhaço, era necessário ser o Bozo! Ser o Bozo era se enquadrar nos rigorosos critérios de Alan Livingston, seu criador ...</p>
+                      </figure>
+                    </li>
+                  </ul>
+
+                  <ul class="business_catgnav wow fadeInDown">
+                    <li>
+                      <figure class="bsbig_fig"> <a href="./entretenimento_e_cultura/a_arte_de_capturar_um relampago_na_garrafa/index.html" class="featured_img"> <img alt="" src="./entretenimento_e_cultura/a_arte_de_capturar_um relampago_na_garrafa/image1.jpg"  class="img_padrao"> <span class="overlay"></span> </a>
+                        <figcaption> <a href="./entretenimento_e_cultura/a_arte_de_capturar_um relampago_na_garrafa/index.html">A arte de capturar um relâmpago na garrafa</a> </figcaption>
+                        <p>Lançado em 2001 após uma verdadeira odisseia de produção, “O Senhor dos Anéis – A Sociedade do Anel”, dirigido por Peter Jackson e baseado na ilustre obra de J. R. R. Tolkien, a empreitada foi ...</p>
+                      </figure>
+                    </li>
+                  </ul>
+
+                  <ul class="business_catgnav wow fadeInDown">
+                    <li>
+                      <figure class="bsbig_fig"> <a href="./entretenimento_e_cultura/spree_a_necessidade_de_ser _famoso/index.html" class="featured_img"> <img alt="" src="./entretenimento_e_cultura/spree_a_necessidade_de_ser _famoso/image1.jpeg"  class="img_padrao"> <span class="overlay"></span> </a>
+                        <figcaption> <a href="./entretenimento_e_cultura/spree_a_necessidade_de_ser _famoso/index.html">"Spree": A Necessidade de ser famoso</a> </figcaption>
+                        <p>No filme Spree, é traçado uma crítica ao fenômeno da supervalorização das personalidades nas redes sociais. Joe Kerry interpreta “Kurt” um influenciador digital fracassado, porém, incansável na busca por ...</p>
+                      </figure>
+                    </li>
+                  </ul>
+
+                  <ul class="business_catgnav wow fadeInDown">
+                    <li>
+                      <figure class="bsbig_fig"> <a href="./entretenimento_e_cultura/formulas_enjoam/index.html" class="featured_img"> <img alt="" src="./entretenimento_e_cultura/formulas_enjoam/image1.png"  class="img_padrao"> <span class="overlay"></span> </a>
+                        <figcaption> <a href="./entretenimento_e_cultura/formulas_enjoam/index.html">Fórmulas Enjoam</a> </figcaption>
+                        <p>Com o lançamento de Os Caras Malvados em 2022, filme mais atual da Dreamworks até esse momento, é impossível não associar duas ideias: como a empresa consegue se reinventar com facilidade e como isso ...</p>
                       </figure>
                     </li>
                   </ul>
@@ -477,48 +529,6 @@
               </div>
             </div>
           </div>
-
-
-          <div style="width: 100%; display: inline; float: left;">
-            <div style="width: 100%; display: flex; justify-content: center;">
-              <div id="esporte" class="single_post_content">
-                <h2><span>ESPORTE</span></h2>
-
-                <div class="div_grid">
-
-                  <ul class="business_catgnav wow fadeInDown">
-                    <li>
-                      <figure class="bsbig_fig"> <a href="ciencia_e_saude/index.html" class="featured_img"> <img alt="" src="images/featured_img2.jpg" class=""> <span class="overlay"></span> </a>
-                        <figcaption> <a href="pages/single_page.html">Proin rhoncus consequat nisl eu ornare mauris</a> </figcaption>
-                        <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a phare...</p>
-                      </figure>
-                    </li>
-                  </ul>
-  
-                  <ul class="business_catgnav wow fadeInDown">
-                    <li>
-                      <figure class="bsbig_fig"> <a href="pages/single_page.html" class="featured_img"> <img alt="" src="images/featured_img2.jpg"> <span class="overlay"></span> </a>
-                        <figcaption> <a href="pages/single_page.html">Proin rhoncus consequat nisl eu ornare mauris</a> </figcaption>
-                        <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a phare...</p>
-                      </figure>
-                    </li>
-                  </ul>
-  
-                  <ul class="business_catgnav wow fadeInDown">
-                    <li>
-                      <figure class="bsbig_fig"> <a href="pages/single_page.html" class="featured_img"> <img alt="" src="images/featured_img2.jpg"> <span class="overlay"></span> </a>
-                        <figcaption> <a href="pages/single_page.html">Proin rhoncus consequat nisl eu ornare mauris</a> </figcaption>
-                        <p>Nunc tincidunt, elit non cursus euismod, lacus augue ornare metus, egestas imperdiet nulla nisl quis mauris. Suspendisse a phare...</p>
-                      </figure>
-                    </li>
-                  </ul>
-
-                </div>
-                
-              </div>
-            </div>
-          </div>
-
 
           
 
@@ -674,10 +684,7 @@
         <div style="width: 50%;">
           <div class="footer_widget wow fadeInLeftBig">
             <h2>Coluna SESI</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            <address>
-            Perfect News,1238 S . 123 St.Suite 25 Town City 3333,USA Phone: 123-326-789 Fax: 123-546-567
-            </address>
+            <p>Website desenvolvido por Gustavo </p>
           </div>
         </div>
         <div  style="width: 50%;">
