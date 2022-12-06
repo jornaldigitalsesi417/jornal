@@ -1247,7 +1247,7 @@ figure.effect-layla:hover img {
     color: #ddd;
     display: inline;
     float: left;
-    padding: 10px 30px 48px;
+    padding: 10px 30px 10px;
     width: 100%
 }
 
@@ -1263,6 +1263,11 @@ figure.effect-layla:hover img {
     font-size: 16px;
     padding: 10px 0;
     text-transform: uppercase
+}
+
+.news_sticker{
+    display: flex;
+    align-items: center;
 }
 
 .tag_nav {}
@@ -1779,6 +1784,19 @@ figure.effect-layla:hover img {
     }
 
     @media(max-width:991px) {
+        .breadcrumb > li {
+            display: none;
+        }
+        .breadcrumb{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .a-share{
+            margin-left: 0;
+            margin-right: 0;
+        }
+
         .add_banner {
             display: none
         }
@@ -1794,6 +1812,10 @@ figure.effect-layla:hover img {
         .latest_post_container {
             height: 380px;
             overflow: hidden
+        }
+
+        .span_other_news{
+            display: none;
         }
 
         #next-button {
